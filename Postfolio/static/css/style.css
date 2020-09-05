@@ -1,0 +1,40 @@
+.signin {
+    background: greenyellow;
+}
+.register{
+    color: plum;
+    background: coral;
+    font-style: initial;
+    padding: 10px 20px;
+}
+h1 {
+    font-size: 5px;
+}
+
+.top {
+    background-image: url(/Postfolio/static/img/zakat.jpg);
+    background-position:top center;
+    background-position-x: center;
+    background-position-y: top;
+    height: 150px;
+    position: relative;
+    padding: 25px 0 0;
+}
+
+.auth-block {
+    float: right;
+    position: relative;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 5px;
+}
+.clearfix::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

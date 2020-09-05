@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Profile personal</h1>
+    <p><h4><a href="{% url 'password_change' %}">change your password</a></h4> </p>
+    <div>
+        {% if user.is_authenticated %}
+        <p><h4>
+                <a href="{% url 'logout' %}">Logout</a>
+        </h4></p>
+        {% else %}
+        <p>
+            <a href="{% url 'login' %}">Login</a>
+        </p>
+        <p>
+            <a href="{% url 'register' %}">Sign-Up</a>
+        </p>
+        
+        {% endif %}
+    </div>
+{% endblock %}
